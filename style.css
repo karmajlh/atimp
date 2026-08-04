@@ -1,0 +1,337 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f4f7fb;
+}
+
+header{
+
+background:#022252;
+color:white;
+padding:3px;
+text-align:center;
+
+}
+
+.busqueda{
+
+padding:25px;
+display:flex;
+justify-content:center;
+
+}
+
+.busqueda input{
+
+width:420px;
+padding:12px;
+font-size:17px;
+border-radius:10px;
+border:1px solid #ccc;
+
+}
+
+.contenedor{
+
+max-width:1500px;
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+padding:25px;
+
+}
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h2{
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+
+color:#666;
+
+}
+
+button{
+
+background:#0d6efd;
+
+color:white;
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:16px;
+
+}
+
+button:hover{
+
+background:#084298;
+
+}
+
+footer{
+
+margin-top:40px;
+
+padding:20px;
+
+background:#222;
+
+color:white;
+
+text-align:center;
+
+}
+
+/* ============================= */
+/* SOPORTE TÉCNICO */
+/* ============================= */
+
+.soporte {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #ffffff;
+
+}
+
+.titulo-soporte {
+
+    font-size: 32px;
+
+    color: #0d6efd;
+
+    margin-bottom: 10px;
+
+}
+
+.descripcion-soporte {
+
+    color: #666;
+
+    margin-bottom: 30px;
+
+}
+
+.tecnicos {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+}
+
+.tecnico-card {
+
+    width: 250px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+
+    transition: .3s;
+
+}
+
+.tecnico-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.tecnico-card img {
+
+    width: 130px;
+
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #0d6efd;
+
+    margin-bottom: 15px;
+
+}
+
+.tecnico-card h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+
+}
+
+.especialidad {
+
+    color: #666;
+
+    margin-bottom: 15px;
+
+}
+
+.estado {
+
+    color: green;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+}
+
+.btn-conectar {
+
+    background: #198754;
+    
+    width: 100%;
+
+}
+
+.btn-conectar:hover {
+
+    background: #146c43;
+
+}
+
+
+
+
+
+
+
+
+/*ENCABEZADO*/
+
+header {
+    position: relative;
+    padding: px;
+    background:#022252; /* opcional */
+    color: white;
+    text-align: center;
+}
+
+/* Logo a la izquierda */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;   /* Ajusta el tamaño */
+    height: auto;
+}
+
+/* Título centrado */
+.titulo h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Segunda línea */
+.titulo p {
+    margin: 8px 0 0;
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+/*NO DISPONIBLE*/
+
+.estado.no-disponible{
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.btn-conectar.deshabilitado{
+    background-color: #dc3545;
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.8;
+    border: none;
+}
+
+.btn-conectar.deshabilitado:hover{
+    background-color: #dc3545;
+}
+
+
+
+/*Boton de panel*/
+.btn-panel{
+    background: #fd7e14;
+    color: white;
+}
+
+.btn-panel:hover{
+    background: #e96b02;
+}
+
+/*Boton de copiar*/
+.btn-copiar{
+    background: #ff2f2f;
+    color: white;
+}
+
+.btn-copiar:hover{
+    background: #cf0404;
+}
