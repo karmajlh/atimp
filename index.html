@@ -9,8 +9,14 @@
 
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 </head>
+
+
+
+
+
+
+
 <body>
 
 <!-- <header>
@@ -20,6 +26,10 @@
     <p>Centro de Descargas</p>
 
 </header> -->
+
+
+
+
 
 
 <header>
@@ -220,31 +230,50 @@ Descargar
             </p>
 
             <!-- DISPONIBLE -->
-            <p class="estado">
+            <!-- <p class="estado">                
                 🟢 Disponible
-            </p>
+            </p> -->
+
+            
+             <p class="estado" id="estado"></p>
 
             <!-- *NO DISPONIBLE*-->
             <!-- <p class="estado no-disponible">
                 🔴 No disponible
             </p> -->
 
-            <a href="https://meet.google.com/gxm-ejjm-nea"
-               target="_blank">
+            <!-- <a href="https://meet.google.com/gxm-ejjm-nea"
+               target="_blank"> -->
 
                 <!--DISPONIBLE*-->
-                <button class="btn-conectar">
+                <!-- <button class="btn-conectar">
                     💻 Conectarse 
-                </button>
+                </button> -->
+
+                
+                <!-- <a id="btnConexion" href="#">
+                    💻 Conectarse
+                </a>     -->
 
                 <!--NO DISPONIBLE-->
                 <!-- <button class="btn-conectar deshabilitado" disabled>
                     💻 No disponible
                 </button> -->
 
+                
+
+                <a id="btnConexion"
+                    href="https://meet.google.com/gxm-ejjm-nea"
+                    target="_blank">
+
+                <button id="botonConexion" class="btn-conectar">
+                        💻 Conectarse
+                </button>
+                </a>
 
 
-            </a>
+
+            
 
         </div>
 
@@ -418,5 +447,61 @@ Descargar
 
 <script src="script.js"></script>
 
+
+<script>
+function actualizarEstado() {
+
+    const estado = document.getElementById("estado");
+    const enlace = document.getElementById("btnConexion");
+    const boton = document.getElementById("botonConexion");
+
+    const ahora = new Date();
+
+    const dia = ahora.getDay(); // 0=Domingo, 1=Lunes...
+    const hora = ahora.getHours();
+    const minuto = ahora.getMinutes();
+
+    const horaActual = hora + minuto / 60;
+
+    // Lunes a Viernes de 08:00 a 16:00
+    const disponible =
+        dia >= 1 &&
+        dia <= 5 &&
+        horaActual >= 8 &&
+        horaActual < 16;
+
+    if (disponible) {
+
+        estado.innerHTML = "🟢 Disponible";
+        estado.style.color = "#28a745";
+
+        enlace.href = "https://meet.google.com/gxm-ejjm-nea";
+        enlace.target = "_blank";
+
+        boton.disabled = false;
+        boton.innerHTML = "💻 Conectarse";
+        boton.classList.remove("deshabilitado");
+
+    } else {
+
+        estado.innerHTML = "🔴 No disponible";
+        estado.style.color = "#dc3545";
+
+        enlace.removeAttribute("href");
+        enlace.removeAttribute("target");
+
+        boton.disabled = true;
+        boton.innerHTML = "💻 No disponible";
+        boton.classList.add("deshabilitado");
+    }
+}
+
+actualizarEstado();
+setInterval(actualizarEstado, 60000);
+
+</script>
+
 </body>
+
+
 </html>
