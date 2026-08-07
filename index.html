@@ -9,14 +9,8 @@
 
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
-
-
-
-
-
-
-
 <body>
 
 <!-- <header>
@@ -26,10 +20,6 @@
     <p>Centro de Descargas</p>
 
 </header> -->
-
-
-
-
 
 
 <header>
@@ -61,138 +51,76 @@ placeholder="Buscar programa...">
 
 <section class="contenedor">
 
-<div class="card">
 
+<div class="card">
 <h2>1. Java</h2>
-
 <!-- <p>plataforma Java SE 8</p> -->
-
 <a href="archivos/jre-8u351-windows-i586.exe" download>
-
 <button>
-
 <i class="fa-solid fa-download"></i>
-
 Descargar
-
 </button>
-
 </a>
-
 </div>
 
-<div class="card">
 
+<div class="card">
 <h2>2. Libreria</h2>
-
 <!-- <p>iofe.indecopi.gob.pe_TSL_tsl-pe</p> -->
-
 <a href="archivos/iofe.indecopi.gob.pe_TSL_tsl-pe.xml" download>
-
 <button>
-
 <i class="fa-solid fa-download"></i>
-
 Descargar
-
 </button>
-
 </a>
-
 </div>
 
 
-
-
 <div class="card">
-
 <h2>3. CryptoIDEAdmin</h2>
-
 <!-- <p>Software Administrador</p> -->
-
 <a href="archivos/CryptoIDEAdmin.zip" download>
-
 <button>
-
 <i class="fa-solid fa-download"></i>
-
 Descargar
-
 </button>
-
 </a>
-
 </div>
 
 
-
-
-
-
-
 <div class="card">
-
 <h2>4. Panel de Control</h2>
-
 <!-- <p>Acceso remoto</p> -->
-
 <a href="archivos/panel.bat" download>
-
 <button class="btn-panel">
-
 <i class="fa-solid fa-download"></i>
-
 Descargar
-
 </button>
-
 </a>
-
 </div>
-
 
 
 <div class="card">
-
 <h2>5. Copiar</h2>
-
 <!-- <p>Acceso remoto</p> -->
-
 <a href="archivos/copiar.bat" download>
-
 <button class="btn-copiar">
-
 <i class="fa-solid fa-download"></i>
-
 Descargar
-
 </button>
-
 </a>
-
 </div>
-
-
 
 
 <!-- <div class="card">
-
 <h2>Herramientas del Técnico</h2>
-
 <p>Utilidades</p>
-
 <a href="archivos/HerramientasTecnico.zip" download>
-
 <button>
-
 <i class="fa-solid fa-download"></i>
-
 Descargar
-
 </button>
-
 </a>
-
 </div> -->
 
 
@@ -215,222 +143,137 @@ Descargar
         Conéctate con uno de nuestros especialistas para recibir asistencia remota.
     </p>
 
+    
+
+    <p class="horario">
+    <i class="fa-regular fa-clock"></i>
+    <span>Horario de atención</span><br>
+    <strong>Lunes a Viernes · 08:00 - 17:00 h</strong>
+    </p>
+
+
+
     <div class="tecnicos">
 
+
         <!-- Técnico 1 -->
-
         <div class="tecnico-card">
-
             <img src="img/marietta.jpg" alt="Técnico">
-
             <h3>Marietta Valdez</h3>
-
             <p class="especialidad">
                 <!-- Asistente Técnico en Computación -->
             </p>
-
-            <!-- DISPONIBLE -->
-            <!-- <p class="estado">                
-                🟢 Disponible
-            </p> -->
-
-            
-             <p class="estado" id="estado"></p>
-
-            <!-- *NO DISPONIBLE*-->
-            <!-- <p class="estado no-disponible">
-                🔴 No disponible
-            </p> -->
-
-            <!-- <a href="https://meet.google.com/gxm-ejjm-nea"
-               target="_blank"> -->
-
-                <!--DISPONIBLE*-->
-                <!-- <button class="btn-conectar">
+                <p class="estado">
+                    🟢 Disponible
+                </p>
+            <a class="enlace-conexion"
+                href="https://meet.google.com/gxm-ejjm-nea"
+            target="_blank">          
+                <button class="btn-conectar">
                     💻 Conectarse 
-                </button> -->
-
-                
-                <!-- <a id="btnConexion" href="#">
-                    💻 Conectarse
-                </a>     -->
-
-                <!--NO DISPONIBLE-->
-                <!-- <button class="btn-conectar deshabilitado" disabled>
-                    💻 No disponible
-                </button> -->
-
-                
-
-                <a id="btnConexion"
-                    href="https://meet.google.com/gxm-ejjm-nea"
-                    target="_blank">
-
-                <button id="botonConexion" class="btn-conectar">
-                        💻 Conectarse
-                </button>
-                </a>
-
-
-
-            
-
+                </button>           
+            </a>
         </div>
 
 
         <!-- Técnico 2 -->
-
         <div class="tecnico-card">
-
             <img src="img/oliver.jpg" alt="Técnico">
-
             <h3>Oliver Nuñez</h3>
-
             <p class="especialidad">
                 <!-- Asistente Técnico en Computación -->
             </p>
-
-            <p class="estado">
-                🟢 Disponible
-            </p>
-
-            <a href="https://meet.google.com/pqk-dnxp-ady"
-               target="_blank">
-
+                <p class="estado">
+                    🟢 Disponible
+                 </p>
+            <a class="enlace-conexion"
+                href="https://meet.google.com/pqk-dnxp-ady"
+            target="_blank">
                 <button class="btn-conectar">
                     💻 Conectarse
                 </button>
             </a>
-
         </div>
 
+
         <!-- Técnico 3 -->
-
         <div class="tecnico-card">
-
             <img src="img/jesusel.jpg" alt="Técnico">
-
             <h3>Jesusel Monge</h3>
-
             <p class="especialidad">
                 <!-- Asistente Técnico en Computación -->
             </p>
-
-            <p class="estado">
-                🟢 Disponible
-            </p>
-
-            <a href="https://meet.google.com/jnd-fecp-pte"
-               target="_blank">
-
+                <p class="estado">
+                    🟢 Disponible
+                </p>
+            <a class="enlace-conexion"
+                href="https://meet.google.com/jnd-fecp-pte"
+                target="_blank">
                 <button class="btn-conectar">
                     💻 Conectarse 
                 </button>
-
             </a>
-
         </div>
 
 
     <!-- Técnico 4 -->
-
-        <div class="tecnico-card">
-
+        <div class="tecnico-card vacaciones">
             <img src="img/jhonatan.jpg" alt="Técnico">
-
             <h3>Jhonatan Pilares</h3>
-
             <p class="especialidad">
                 <!-- Asistente Técnico en Computación -->
             </p>
-
-            <!--DISPONIBLE-->
-            <!-- <p class="estado">
-                🟢 Disponible 
-            </p> -->
-
-            <!--NO DISPONIBLE-->
-            <p class="estado no-disponible">
-                🔴 No disponible
-            </p>
-
-            <a href=" "
-               target="_blank">
-
-                <!--DISPONIBLE-->
-               <!-- <button class="btn-conectar">
-                    💻 Conectarse
-                </button> -->
-
-                <!--NO DISPONIBLE-->
-                <button class="btn-conectar deshabilitado" disabled>
-                    💻 No disponible
-                </button>
-
-            </a>
-
-        </div>
-
-
-
-
-
-
-    <!-- Técnico 5 -->
-
-        <div class="tecnico-card">
-
-            <img src="img/julio.jpg" alt="Técnico">
-
-            <h3>Julio López</h3>
-
-            <p class="especialidad">
-                <!-- Asistente Técnico en Computación -->
-            </p>
-
-            <p class="estado">
-                🟢 Disponible
-            </p>
-
-            <a href="https://meet.google.com/eyq-kmuk-tec"
-               target="_blank">
-
+                <p class="estado">
+                    🟢 Disponible 
+                </p>
+            <a class="enlace-conexion"
+                href="#"
+                target="_blank">               
                 <button class="btn-conectar">
                     💻 Conectarse 
                 </button>
+            </a>         
+        </div>
 
+
+    <!-- Técnico 5 -->
+        <div class="tecnico-card">
+            <img src="img/julio.jpg" alt="Técnico">
+                <h3>Julio López</h3>
+                <p class="especialidad">
+                <!-- Asistente Técnico en Computación -->
+                </p>
+                    <p class="estado">
+                        🟢 Disponible
+                    </p>          
+            <a class="enlace-conexion"
+                href="https://meet.google.com/eyq-kmuk-tec"
+            target="_blank">
+            <button class="btn-conectar">
+                    💻 Conectarse 
+                </button>
             </a>
-
         </div>
 
 
          <!-- Técnico 6 -->
-
         <div class="tecnico-card">
-
             <img src="img/vidal.jpg" alt="Técnico">
-
             <h3>Vidal Vasquez</h3>
-
             <p class="especialidad">
                 <!-- Asistente Técnico en Computación -->
             </p>
-
-            <p class="estado">
-                🟢 Disponible
-            </p>
-
-            <a href="https://meet.google.com/pjp-abwg-uix"
-               target="_blank">
-
+                <p class="estado">
+                    🟢 Disponible
+                </p>
+            <a class="enlace-conexion"
+                href="https://meet.google.com/pjp-abwg-uix"
+            target="_blank">
                 <button class="btn-conectar">
                     💻 Conectarse 
                 </button>
-
             </a>
-
         </div>
-
 
 
     </div>
@@ -447,61 +290,100 @@ Descargar
 
 <script src="script.js"></script>
 
-
 <script>
-function actualizarEstado() {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const estado = document.getElementById("estado");
-    const enlace = document.getElementById("btnConexion");
-    const boton = document.getElementById("botonConexion");
+    function actualizarEstado() {
 
-    const ahora = new Date();
+        const ahora = new Date();
 
-    const dia = ahora.getDay(); // 0=Domingo, 1=Lunes...
-    const hora = ahora.getHours();
-    const minuto = ahora.getMinutes();
+        const dia = ahora.getDay();
+        const hora = ahora.getHours();
+        const minuto = ahora.getMinutes();
 
-    const horaActual = hora + minuto / 60;
+        const horaActual = hora + minuto / 60;
 
-    // Lunes a Viernes de 08:00 a 16:00
-    const disponible =
-        dia >= 1 &&
-        dia <= 5 &&
-        horaActual >= 8 &&
-        horaActual < 16;
+        // Lunes a viernes: 08:00 a. m. hasta 04:00 p. m.
+        const disponible =
+            dia >= 1 &&
+            dia <= 5 &&
+            horaActual >= 8 &&
+            horaActual < 17;
 
+        const tecnicos = document.querySelectorAll(".tecnico-card");
+
+tecnicos.forEach(function (tecnico) {
+
+    const estado = tecnico.querySelector(".estado");
+    const enlace = tecnico.querySelector(".enlace-conexion");
+    const boton = tecnico.querySelector(".btn-conectar");
+
+    // Si falta algún elemento, continuar con el siguiente técnico
+    if (!estado || !enlace || !boton) {
+        return;
+    }
+
+    // Técnico de vacaciones
+    if (tecnico.classList.contains("vacaciones")) {
+
+        estado.innerHTML = "🌴 De vacaciones";
+        estado.style.color = "#ff9800";
+
+        boton.disabled = true;
+        // boton.innerHTML = '<i class="fa-solid fa-umbrella-beach"></i> De vacaciones';
+        boton.innerHTML = '<i class="fa-solid fa-lock"></i> No disponible';
+        boton.classList.add("deshabilitado");
+
+        enlace.removeAttribute("href");
+        enlace.style.cursor = "not-allowed";
+        boton.style.cursor = "not-allowed";
+
+        return; // No seguir evaluando este técnico
+    }
+
+    // Horario normal
     if (disponible) {
 
         estado.innerHTML = "🟢 Disponible";
         estado.style.color = "#28a745";
 
-        enlace.href = "https://meet.google.com/gxm-ejjm-nea";
-        enlace.target = "_blank";
-
         boton.disabled = false;
-        boton.innerHTML = "💻 Conectarse";
+        boton.innerHTML = '<i class="fa-solid fa-laptop"></i> Conectarse';
         boton.classList.remove("deshabilitado");
+
+        enlace.style.pointerEvents = "auto";
+        enlace.onclick = null;
+        enlace.style.cursor = "pointer";
+        boton.style.cursor = "pointer";
 
     } else {
 
         estado.innerHTML = "🔴 No disponible";
         estado.style.color = "#dc3545";
 
-        enlace.removeAttribute("href");
-        enlace.removeAttribute("target");
-
         boton.disabled = true;
-        boton.innerHTML = "💻 No disponible";
+        boton.innerHTML = '<i class="fa-solid fa-lock"></i> No disponible';
         boton.classList.add("deshabilitado");
+
+        enlace.onclick = function(e){
+            e.preventDefault();
+        };
+
+        enlace.style.cursor = "not-allowed";
+        boton.style.cursor = "not-allowed";
     }
-}
 
-actualizarEstado();
-setInterval(actualizarEstado, 60000);
+});
+    }
 
+    actualizarEstado();
+
+    // Actualiza automáticamente cada minuto
+    setInterval(actualizarEstado, 60000);
+
+});
 </script>
 
+
 </body>
-
-
 </html>

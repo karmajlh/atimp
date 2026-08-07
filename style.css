@@ -295,27 +295,6 @@ header {
 
 
 
-/*NO DISPONIBLE*/
-
-.estado.no-disponible{
-    color: #dc3545;
-    font-weight: bold;
-}
-
-.btn-conectar.deshabilitado{
-    background-color: #dc3545;
-    color: #fff;
-    cursor: not-allowed;
-    opacity: 0.8;
-    border: none;
-}
-
-.btn-conectar.deshabilitado:hover{
-    background-color: #dc3545;
-}
-
-
-
 /*Boton de panel*/
 .btn-panel{
     background: #fd7e14;
@@ -334,4 +313,40 @@ header {
 
 .btn-copiar:hover{
     background: #cf0404;
+}
+
+
+/*BOTON DESABILITADO*/
+.btn-conectar.deshabilitado {
+    background-color: #6c757d;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.btn-conectar:disabled {
+    cursor: not-allowed;
+}
+
+
+
+
+.horario{
+    font-size:11px;
+    color:#6c757d;
+    text-align:center;
+    line-height:1.4;
+    margin:8px 0 12px;
+}
+
+.horario i{
+    color:#0d6efd;
+    margin-right:4px;
+}
+
+.horario strong{
+    display:block;
+    color:#045cff;
+    font-size:12px;
+    font-weight:600;
 }
