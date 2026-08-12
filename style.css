@@ -350,3 +350,152 @@ header {
     font-size:12px;
     font-weight:600;
 }
+
+
+
+/*BOTON ENVIAR ENLACE*/
+
+/* =================================
+   BOTÓN PRINCIPAL
+================================= */
+
+.btn-enlace {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-enlace:hover {
+    background: #1ebe5d;
+}
+
+/* =================================
+   FONDO DE LA VENTANA
+================================= */
+
+.modal-whatsapp {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* =================================
+   CUADRO
+================================= */
+
+.modal-contenido {
+    position: relative;
+    width: 90%;
+    max-width: 380px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* =================================
+   TITULO
+================================= */
+
+.modal-contenido h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #123b63;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =================================
+   TEXTO
+================================= */
+
+.modal-contenido p {
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+/* =================================
+   BOTÓN CERRAR
+================================= */
+
+.cerrar {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #777;
+    cursor: pointer;
+}
+
+
+.cerrar:hover {
+    color: #000;
+}
+
+/* =================================
+   TELEFONO
+================================= */
+
+.telefono {
+    display: flex;
+    width: 100%;
+    margin: 15px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.telefono span {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    background: #f1f1f1;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.telefono input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* =================================
+   BOTÓN ENVIAR
+================================= */
+
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #25D366;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.btn-enviar:hover {
+    background: #1ebe5d;
+}
