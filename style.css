@@ -167,6 +167,8 @@ text-align:center;
 
     gap: 25px;
 
+  
+
 }
 
 .tecnico-card {
@@ -179,7 +181,7 @@ text-align:center;
 
     border-radius: 20px;
 
-    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 
     transition: .3s;
 
@@ -499,3 +501,6 @@ header {
 .btn-enviar:hover {
     background: #1ebe5d;
 }
+
+
+
