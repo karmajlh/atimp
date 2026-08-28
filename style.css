@@ -125,9 +125,6 @@ text-align:center;
 
 }
 
-/* ============================= */
-/* SOPORTE TÉCNICO */
-/* ============================= */
 
 .soporte {
 
@@ -166,8 +163,7 @@ text-align:center;
     flex-wrap: wrap;
 
     gap: 25px;
-
-  
+ 
 
 }
 
@@ -249,15 +245,6 @@ text-align:center;
 
 }
 
-
-
-
-
-
-
-
-/*ENCABEZADO*/
-
 header {
     position: relative;
     padding: px;
@@ -266,7 +253,6 @@ header {
     text-align: center;
 }
 
-/* Logo a la izquierda */
 .logo {
     position: absolute;
     left: 20px;
@@ -276,28 +262,19 @@ header {
     height: auto;
 }
 
-/* Título centrado */
 .titulo h2 {
     margin: 0;
     font-size: 28px;
     font-weight: bold;
 }
 
-/* Segunda línea */
+
 .titulo p {
     margin: 8px 0 0;
     font-size: 18px;
     color: #f0f0f0;
 }
 
-
-
-
-
-
-
-
-/*Boton de panel*/
 .btn-panel{
     background: #fd7e14;
     color: white;
@@ -307,7 +284,6 @@ header {
     background: #e96b02;
 }
 
-/*Boton de copiar*/
 .btn-copiar{
     background: #ff2f2f;
     color: white;
@@ -317,8 +293,6 @@ header {
     background: #cf0404;
 }
 
-
-/*BOTON DESABILITADO*/
 .btn-conectar.deshabilitado {
     background-color: #6c757d;
     color: white;
@@ -329,8 +303,6 @@ header {
 .btn-conectar:disabled {
     cursor: not-allowed;
 }
-
-
 
 
 .horario{
@@ -355,12 +327,6 @@ header {
 
 
 
-/*BOTON ENVIAR ENLACE*/
-
-/* =================================
-   BOTÓN PRINCIPAL
-================================= */
-
 .btn-enlace {
     background: #25D366;
     color: white;
@@ -376,9 +342,6 @@ header {
     background: #1ebe5d;
 }
 
-/* =================================
-   FONDO DE LA VENTANA
-================================= */
 
 .modal-whatsapp {
     display: none;
@@ -395,10 +358,6 @@ header {
 }
 
 
-/* =================================
-   CUADRO
-================================= */
-
 .modal-contenido {
     position: relative;
     width: 90%;
@@ -410,10 +369,6 @@ header {
     text-align: center;
 }
 
-/* =================================
-   TITULO
-================================= */
-
 .modal-contenido h2 {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -422,18 +377,11 @@ header {
 }
 
 
-/* =================================
-   TEXTO
-================================= */
-
 .modal-contenido p {
     font-family: Arial, sans-serif;
     color: #555;
 }
 
-/* =================================
-   BOTÓN CERRAR
-================================= */
 
 .cerrar {
     position: absolute;
@@ -451,9 +399,6 @@ header {
     color: #000;
 }
 
-/* =================================
-   TELEFONO
-================================= */
 
 .telefono {
     display: flex;
@@ -481,9 +426,6 @@ header {
     font-size: 16px;
 }
 
-/* =================================
-   BOTÓN ENVIAR
-================================= */
 
 .btn-enviar {
     width: 100%;

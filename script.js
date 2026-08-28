@@ -11,33 +11,17 @@ card.style.display="none";
 });
 });
 
-
-/* =================================
-   ABRIR VENTANA
-================================= */
-
 function abrirVentanaWhatsApp() {
 
     const ventana =
         document.getElementById(
             "ventanaWhatsApp"
         );
-
-
     ventana.style.display = "flex";
-
-
     document
         .getElementById("numeroWhatsApp")
         .focus();
-
 }
-
-
-
-/* =================================
-   CERRAR VENTANA
-================================= */
 
 function cerrarVentanaWhatsApp() {
 
@@ -47,11 +31,6 @@ function cerrarVentanaWhatsApp() {
 
 }
 
-
-
-/* =================================
-   ENVIAR WHATSAPP
-================================= */
 
 function enviarWhatsApp() {
 
@@ -63,12 +42,6 @@ function enviarWhatsApp() {
 
     const numero =
         campo.value.trim();
-
-
-
-    /* ===============================
-       VALIDAR NUMERO
-    =============================== */
 
     if (!/^\d{9}$/.test(numero)) {
 
@@ -83,19 +56,9 @@ function enviarWhatsApp() {
     }
 
 
-
-    /* ===============================
-       OBTENER URL ACTUAL
-    =============================== */
-
     const enlace =
         window.location.href;
 
-
-
-    /* ===============================
-       CREAR MENSAJE
-    =============================== */
 
     const mensaje =
 `Hola, ingrese al siguiente enlace y seleccione el nombre del especialista informático que desea contactar:
@@ -104,23 +67,11 @@ ${enlace}
 
 Saludos.`;
 
-
-
-    /* ===============================
-       CREAR URL WHATSAPP
-    =============================== */
-
     const url =
         "https://wa.me/51" +
         numero +
         "?text=" +
         encodeURIComponent(mensaje);
-
-
-
-    /* ===============================
-       ABRIR WHATSAPP
-    =============================== */
 
     window.open(
         url,
@@ -128,28 +79,12 @@ Saludos.`;
     );
 
 
-
-    /* ===============================
-       CERRAR VENTANA
-    =============================== */
-
     cerrarVentanaWhatsApp();
-
-
-
-    /* ===============================
-       LIMPIAR NUMERO
-    =============================== */
 
     campo.value = "";
 
 }
 
-
-
-/* =================================
-   CERRAR AL HACER CLIC AFUERA
-================================= */
 
 window.addEventListener(
     "click",
@@ -171,10 +106,6 @@ window.addEventListener(
 );
 
 
-
-/* =================================
-   ENTER PARA ENVIAR
-================================= */
 
 document.addEventListener(
     "keydown",
